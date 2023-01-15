@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CEASER CYPHER</title>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="ceasercypher.css" />
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ceasercypher.html" class="btn btn-secondary mx-2" role="button">ceasercypher</a></li>
+        
+        <li><a href="transposition.html" class="btn btn-warning mx-2" role="button">transposition</a></li>
+        <li><a href="password_generator.html" class="btn btn-primary mx-2 " role="button">Random password generator</a></li>
+      </ul>
+    <!-- Bootstrap Static Header -->
+<div style="background-color: bisque; color: black;" class="jumbotron bg-cover text-black">
+    <div class="container py-5 text-center">
+        <h1 class="display-4 font-weight-bold">CEASER CYPHER</h1>
+        <p class="font-italic mb-0">Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques</p>
+        
+       
+    </div>
+</div>
+
+<!-- For Demo Purpose -->
+<div class="container py-5">
+    <h2 class="h3 font-weight-bold">About</h2>
+    <div class="row">
+        <div class="col-lg-10 mb-4">
+            <p class="font-italic text-muted">A Caesar cipher with a shift of one is used on the back of the mezuzah to encrypt the names of God. This may be a holdover from an earlier time when Jewish people were not allowed to have mezuzot. The letters of the cryptogram themselves comprise a religiously significant "divine name" which Orthodox belief holds keeps the forces of evil in check.
+
+                In the 19th century, the personal advertisements section in newspapers would sometimes be used to exchange messages encrypted using simple cipher schemes. Kahn (1967) describes instances of lovers engaging in secret communications enciphered using the Caesar cipher in The Times. Even as late as 1915, the Caesar cipher was in use: the Russian army employed it as a replacement for more complicated ciphers which had proved to be too difficult for their troops to master; German and Austrian cryptanalysts had little difficulty in decrypting their messages.
+                
+                
+                A construction of two rotating disks with a Caesar cipher can be used to encrypt or decrypt the code.
+                Caesar ciphers can be found today in children's toys such as secret decoder rings. A Caesar shift of thirteen is also performed in the ROT13 algorithm, a simple method of obfuscating text widely found on Usenet and used to obscure text (such as joke punchlines and story spoilers), but not seriously used as a method of encryption.
+                
+                The Vigenère cipher uses a Caesar cipher with a different shift at each position in the text; the value of the shift is defined using a repeating keyword. If the keyword is as long as the message, is chosen at random, never becomes known to anyone else, and is never reused, this is the one-time pad cipher, proven unbreakable. The conditions are so difficult they are, in practical effect, never achieved. Keywords shorter than the message (e.g., "Complete Victory" used by the Confederacy during the American Civil War), introduce a cyclic pattern that might be detected with a statistically advanced version of frequency analysis.</p>
+            
+        </div>
+       
+    </div>
+</div>
+</div>
+
+<style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: rgb(14, 13, 13);
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+    <body>
+    
+   <h1 class="text-center my-5">ENCRYPTION</h1>
+    
+    <div class="text-center">
+     
+        <label class="label" for="fname">Plain text</label>
+        <input  type="text" id="inputplaintext" name="firstname" placeholder="hello  world">
+     
+        <label class="label" for="lname">Key</label>
+        <input type="text" id="key" name="lastname" placeholder="key.">
+      
+        <label>Encrypted message is</label><br>
+   <label id="output">.....</label><br>
+   <button id="submit" class="btn btn-primary">encrypt</button>
+     
+    </div>
+
+    <h1 class="text-center my-5">DECRYPTION</h1>
+    
+    <div class="text-center">
+     
+        <label class="label" for="fname">cypher text</label>
+        <input  type="text" id="dinputplaintext" name="firstname" placeholder="KHOOR">
+     
+        <label class="label" for="lname">Key</label>
+        <input type="text" id="dkey" name="lastname" placeholder="key.">
+      
+        <label>Decrypted message is</label><br>
+   <label id="doutput">.....</label><br>
+   <button id="dsubmit" class="btn btn-primary">Decrypt</button>
+     
+    </div>
+
+    <div class="my-50">
+      <!-- Footer -->
+      <footer class="text-center text-dark" style="background-color: #30323c">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="ceasercypher.html" class="text-dark">ceaser cypher</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+             
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="transposition.html" class="text-dark">transposition</a>
+                </h6>
+              </div>
+
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="password_generator.html" class="text-dark">password generator</a>
+                </h6>
+              </div>
+            
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  This project was developed by sumeet supali , Shankar Gouda Patil and Udayshankar Koulapur under the guidance of Veena Desai ma'am
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+         
+              </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(253, 238, 238, 0.993)"
+             >
+          © 2023 Copyright:
+          <a class="text-dark" href="index.html"
+             >ECE BRANCH</a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <script src="ceasercypher.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background-color: #333;
+    /**/
+    color: aliceblue;
+}
+h1{
+    color: aliceblue;
+   
+}
+#welcome {
+  display: flex;
+  justify-content: center;
+  top: 100000vh;
+}
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+.head{
+    height: 80vh;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    /*background-repeat: no-repeat ;*/
+    /*background-size: 1500px 900px;*/
+  }
+
+
+  
